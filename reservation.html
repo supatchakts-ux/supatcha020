@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จองโต๊ะ | บ้านสวน สยาม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">บ้านสวน สยาม</div>
+    <nav>
+      <a href="index.html">หน้าแรก</a>
+      <a href="menu.html">เมนู</a>
+      <a href="about.html">เกี่ยวกับเรา</a>
+      <a href="reservation.html" class="active">จองโต๊ะ</a>
+      <a href="contact.html">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>จองโต๊ะออนไลน์</h2>
+    <div class="form-box">
+      <form onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับการจอง! เราจะติดต่อกลับโดยเร็วที่สุด');">
+        <div class="form-group">
+          <label>ชื่อ-นามสกุล</label>
+          <input type="text" required placeholder="กรอกชื่อของคุณ">
+        </div>
+        <div class="form-group">
+          <label>เบอร์โทรศัพท์</label>
+          <input type="tel" required placeholder="08x-xxx-xxxx">
+        </div>
+        <div class="form-group">
+          <label>วันที่</label>
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <label>เวลา</label>
+          <select required>
+            <option value="">เลือกเวลา</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>จำนวนคน</label>
+          <input type="number" min="1" max="20" value="2" required>
+        </div>
+        <div class="form-group">
+          <label>ข้อความเพิ่มเติม (ถ้ามี)</label>
+          <textarea rows="3" placeholder="เช่น ขอโต๊ะริมหน้าต่าง, วันเกิด ฯลฯ"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%;">ยืนยันการจอง</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 บ้านสวน สยาม</p>
+  </footer>
+</body>
+</html>
